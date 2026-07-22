@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Tui Nabou Development</title>
+  <meta name="description" content="Contact Tui Nabou Development about the prime residential lots for sale at Natogadravu." />
+  <link rel="stylesheet" href="assets/styles.css" />
+<link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico">
+  <style>
+        .blink {
+            /* 1 second duration, 'steps(1, end)' creates a hard on/off blink, repeats forever */
+            animation: blinker 1s steps(1, end) infinite;
+            
+            /* Visual styling for the div */
+            width: 200px;
+            padding: 20px;
+            background-color: #ffcccc;
+            color: #cc0000;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0; /* The div becomes completely invisible halfway through */
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div>Buyer enquiries • Natogadravu residential lots</div>
+      <div class="mini-links">
+        <a href="tel:+6799365630">+679 936 5630</a>
+        <a href="tel:+6799925226">+679 992 5226</a>
+        <a href="mailto:tuinabou@gmail.com">tuinabou@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <div class="brand-mark brand-logo-shell"><img src="assets/senibua.png" alt="Senibua logo" class="brand-logo" /></div>
+        <div class="brand-text">
+          <small>TUI NABOU DEVELOPMENT &amp; CONSTRUCTION PTE LIMITED</small>
+          <strong>Contact the sales team</strong>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="development.html">Lots &amp; Pricing</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact us</span>
+        <h1>Start your enquiry about current lot availability.</h1>
+        <p class="lead">Visitors can use the form below or contact the team directly for pricing, site viewing arrangements, title details and general sales support.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-3">
+        <article class="contact-card">
+          <div class="icon">☎</div>
+          <h3>Sales phones</h3>
+          <p class="muted">Speak directly with the team.</p>
+          <p><a href="tel:+6799365630">+679 936 5630</a><br><a href="tel:+6799925226">+679 992 5226</a></p>
+        </article>
+        <article class="contact-card">
+          <div class="icon">✉</div>
+          <h3>Email</h3>
+          <p class="muted">Send an enquiry about availability, pricing or lot details.</p>
+          <p><a href="mailto:tuinabou@gmail.com">tuinabou@gmail.com</a></p>
+        </article>
+        <article class="contact-card">
+          <div class="icon">⌂</div>
+          <h3>Office &amp; area</h3>
+          <p class="muted">Natogadravu, Nuku, Tailevu South<br>GPO Box 19120, Suva</p>
+          <p>Near Nausori Airport and Nausori Town.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="enquiry-form">
+      <div class="container split">
+        <div class="panel">
+          <h3>Suggested enquiry topics</h3>
+          <ul class="clean-list">
+            <li>Current lot availability</li>
+            <li>Lot sizes and subdivision layout</li>
+            <li>Pricing and payment details</li>
+            <li>99-year TLTB lease title information</li>
+            <li>Site viewing arrangements</li>
+          </ul>
+
+
+
+           <div class="notice" style="margin-top:1rem;">
+
+            <strong>Note:</strong> Limited stock in a high-demand area, so the form and call links now focus more directly on availability enquiries.
+          </div>
+
+
+
+        </div>
+        <div class="form-shell">
+          <h3>Enquiry form</h3>
+          <p class="form-note">Complete the details below and click send enquiry.</p>
+          <form class="enquiry-form" action="https://formspree.io/f/xeebdpey" method="POST">
+            <input type="hidden" name="_subject" value="Natogadravu lots website enquiry" />
+            <input type="hidden" name="_captcha" value="false" />
+            <div style="display:none;">
+              <label>Leave this field empty
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+              </label>
+            </div>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+              <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" />
+              </div>
+              <div class="field">
+                <label for="interest">Enquiry type</label>
+                <select id="interest" name="interest" required>
+                  <option value="">Select an option</option>
+                  <option>Residential lot availability</option>
+                  <option>Pricing and payment details</option>
+                  <option>First-home buyer VAT question</option>
+                  <option>Site viewing request</option>
+                  <option>General information</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Tell us what you would like to know about the Natogadravu lots."></textarea>
+              </div>
+            </div>
+            <div class="actions" style="margin-bottom:0.5rem;">
+              <button class="btn btn-primary" type="submit">Send enquiry</button>
+              <a class="btn btn-secondary" href="mailto:tuinabou@gmail.com">Email directly</a>
+            </div>
+            <p class="status-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Google Maps location</span>
+            <h2>Find the project area on the map</h2>
+          </div>
+          <p>Use the map below for orientation, then contact the team for precise lot guidance and site access details.</p>
+        </div>
+        <div class="map-layout">
+          <div class="panel">
+            <h3>Location reference</h3>
+            <p class="muted">The subdivision is presented at Natogadravu, Wainibokasi near Nausori Airport, with convenient access to Nausori Town and the wider Suva–Nausori corridor.</p>
+            <div class="actions">
+              <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps?q=18%C2%B003'32.4S%20178%C2%B034'40.3E">Open full Google Maps</a>
+            </div>
+            <div class="notice">For direct enquiries, call <a href="tel:+6799365630">+679 936 5630</a> or email <a href="mailto:tuinabou@gmail.com">tuinabou@gmail.com</a>.</div>
+          </div>
+          <div class="map-embed">
+            <iframe title="Natogadravu lots map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=18%C2%B003'32.4S%20178%C2%B034'40.3E&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>TUI NABOU DEVELOPMENT &amp; CONSTRUCTION PTE LIMITED</h3>
+          <p>Contact-ready website for the Natogadravu residential lots offering.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <p><a href="index.html">Home</a><br><a href="about.html">About Us</a><br><a href="development.html">Lots &amp; Pricing</a></p>
+        </div>
+        <div>
+          <h3>Primary contacts</h3>
+          <p><a href="tel:+6799365630">+679 936 5630</a><br><a href="tel:+6799925226">+679 992 5226</a><br><a href="mailto:tuinabou@gmail.com">tuinabou@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Copyright Tui Nabou Development & Construction LTD. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
